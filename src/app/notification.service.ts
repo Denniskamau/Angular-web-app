@@ -14,12 +14,12 @@ export class NotificationService {
     let url = 'https://fcm.googleapis.com/fcm/send'
     let headers = new HttpHeaders({
       'Content-Type': 'application/json',
-      'Authorization': "AAAAIvkKBHQ:APA91bG4EqMU4I2P9erGPO_rOKEeuj2Jpr-e3RH-EIRnEfZxHt8G0NjnxHhSfrqsZOp1QJXw6gJKkytgn63Y4Bz-Otdk37YDYgNIfoFVEoNk3eyzues1HFhzKvyYB3bDyjUiVlujWHVP" });
+      'Authorization': "key=AAAAIvkKBHQ:APA91bG4EqMU4I2P9erGPO_rOKEeuj2Jpr-e3RH-EIRnEfZxHt8G0NjnxHhSfrqsZOp1QJXw6gJKkytgn63Y4Bz-Otdk37YDYgNIfoFVEoNk3eyzues1HFhzKvyYB3bDyjUiVlujWHVP" });
     let options = { headers: headers };
     let data = {
       "notification": {
-        "title": "My title",
-        "text": "My text",
+        "title": "New Product",
+        "text": "A new product has been added",
         "sound": "default"
       },
       "priority": "High",

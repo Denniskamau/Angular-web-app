@@ -12,7 +12,9 @@ export class AppComponent {
   
   triggerNotification(){
     console.log('clicked')
-    let data= this.notificationService.sendNotification()
-    console.log('data',JSON.stringify(data))
+    this.notificationService.sendNotification().subscribe(data =>{
+      console.log('data',JSON.stringify(data))
+    })
+    
   }
 }
